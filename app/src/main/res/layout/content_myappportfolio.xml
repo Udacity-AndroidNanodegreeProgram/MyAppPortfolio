@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relative_layout"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".myappportfolio"
+    tools:showIn="@layout/activity_myappportfolio">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scrollView"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:text="@string/mynanodegreeapps"
+        android:textColor="#060606"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/spotifystreamer"
+        android:layout_width="350dp"
+        android:layout_height="65dp"
+        android:layout_gravity="center"
+        android:onClick="toastmessage"
+        android:text="@string/spotifystreamer"
+        android:textColor="#030303"
+        android:textSize="25sp"
+        android:background="#f08c35"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:id="@+id/scoresapp"
+        android:layout_width="350dp"
+        android:layout_height="65dp"
+        android:layout_gravity="center"
+        android:onClick="toastmessage"
+        android:text="@string/scoresapp"
+        android:textColor="#FF030303"
+        android:textSize="25sp"
+        android:background="#F08C35"
+        android:layout_below="@+id/spotifystreamer"
+        android:layout_alignLeft="@+id/spotifystreamer"
+        android:layout_alignStart="@+id/spotifystreamer"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/libraryapp"
+        android:layout_width="350dp"
+        android:layout_height="65dp"
+        android:layout_alignLeft="@+id/scoresapp"
+        android:layout_alignStart="@+id/scoresapp"
+        android:layout_below="@+id/scoresapp"
+        android:layout_gravity="center"
+        android:onClick="toastmessage"
+        android:text="@string/libraryapp"
+        android:textColor="#FF030303"
+        android:textSize="25sp"
+        android:background="#F08C35"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/builditbigger"
+        android:layout_width="350dp"
+        android:layout_height="65dp"
+        android:layout_alignLeft="@+id/libraryapp"
+        android:layout_alignStart="@+id/libraryapp"
+        android:layout_below="@+id/libraryapp"
+        android:layout_gravity="center"
+        android:onClick="toastmessage"
+        android:text="@string/builditbigger"
+        android:textColor="#FF030303"
+        android:textSize="25sp"
+        android:background="#F08C35"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/xyzreader"
+        android:layout_width="350dp"
+        android:layout_height="65dp"
+        android:layout_alignLeft="@+id/builditbigger"
+        android:layout_alignStart="@+id/builditbigger"
+        android:layout_below="@+id/builditbigger"
+        android:layout_gravity="center"
+        android:onClick="toastmessage"
+        android:text="@string/xyzreader"
+        android:textColor="#FF030303"
+        android:textSize="25sp"
+        android:background="#F08C35"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/capstone"
+        android:layout_width="350dp"
+        android:layout_height="65dp"
+        android:layout_alignLeft="@+id/xyzreader"
+        android:layout_alignStart="@+id/xyzreader"
+        android:layout_below="@+id/xyzreader"
+        android:layout_gravity="center"
+        android:onClick="toastmessage"
+        android:text="@string/capstone"
+        android:textColor="#fefdfd"
+        android:textSize="25sp"
+        android:background="#d25e525b"
+        android:layout_marginTop="10dp"/>
+
+
+</RelativeLayout>
